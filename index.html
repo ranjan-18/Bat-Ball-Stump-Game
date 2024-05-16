@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump Game</title>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <h1>
+                Bat Ball Stump Game
+            </h1>
+        </div>
+        <div class="content">
+            <img src="bat.jpg" alt="cricket bat image">
+            <img src="ball.jpg" alt="cricket ball image">
+            <img src="stump.jpg" alt="cricket stump image">
+        </div>
+        <div class="btn">
+            <button class="b" onclick="
+            let randomNumber=Math.random() * 3;
+            let computerchoice;
+            if(randomNumber>0 && randomNumber<=1)
+            computerchoice='Bat';
+            else if(randomNumber>1 && randomNumber<=2)
+            computerchoice='Ball';
+            else if(randomNumber>2 && randomNumber<=3)
+            computerchoice='Stump';
+            
+            let result;
+            if(computerchoice==='Ball')
+            result='YOU WON';
+            else if(computerchoice==='Bat')
+            result=`It's a TIE`;
+            else if(computerchoice==='Stump')
+            result='YOU LOSS BETTER LUCK NEXT TIME';
+            
+            alert(` you have choosen Bat. Computer choice is ${computerchoice} and ${result}`);
+            
+            
+            
+            ">Bat</button>
+            <button class="b" onclick="
+            let randomNumber=Math.random() * 3;
+            let computerchoice;
+            if(randomNumber>0 && randomNumber<=1)
+            computerchoice='Bat';
+            else if(randomNumber>1 && randomNumber<=2)
+            computerchoice='Ball';
+            else if(randomNumber>2 && randomNumber<=3)
+            computerchoice='Stump';
+            
+            let result;
+            if(computerchoice==='Ball')
+            result=`It's a TIE`;
+            else if(computerchoice==='Bat')
+            result='YOU LOSS BETTER LUCK NEXT TIME';
+            else if(computerchoice==='Stump')
+            result='YOU WON';
+            
+            alert(` you have choosen Ball. Computer choice is ${computerchoice} and ${result}`);
+            
+
+
+            ">Ball</button>
+            <button class="b" onclick="
+            let randomNumber=Math.random() * 3;
+            let computerchoice;
+            if(randomNumber>0 && randomNumber<=1)
+            computerchoice='Bat';
+            else if(randomNumber>1 && randomNumber<=2)
+            computerchoice='Ball';
+            else if(randomNumber>2 && randomNumber<=3)
+            computerchoice='Stump';
+            
+            let result;
+            if(computerchoice==='Ball')
+            result='YOU LOSS BETTER LUCK NEXT TIME';
+            else if(computerchoice==='Bat')
+            result='YOU WON';
+            else if(computerchoice==='Stump')
+            result=`It's a TIE`;
+            
+            alert(` you have choosen Stump. Computer choice is ${computerchoice} and ${result}`);
+            
+            
+            
+            ">Stump</button>
+        </div>
+        <h2>
+            RULES
+        </h2>
+        <div class="rules">
+            <ul>
+                <li>Bat v/s Ball ---Bat won</li>
+                <li>Ball v/s Stump ----Ball won</li>
+                <li>bat v/s Stump ----Stump won</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
